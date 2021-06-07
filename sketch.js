@@ -26,13 +26,13 @@ function setup() {
 
 	//Create the Bodies Here.
   
-    stone= new Stone(50,250,5,5);
+    stone= new Stone(50,250,5);
     ground= new Ground(400,600,800,300)
     slingshot = new SlingShot(stone.body,{x:90, y:400});
-    mango1= new Mango(400,100,5,5)
-    mango2= new Mango(450,200,5,5)
-    mango3= new Mango(340,200,5,5)
-    mango4= new Mango(400,300,5,5)
+    mango1= new Mango(400,100,5)
+    mango2= new Mango(450,200,5)
+    mango3= new Mango(340,200,5)
+    mango4= new Mango(400,300,5)
     tree= new Tree(400,300,5,5)
 
     Engine.run(engine);
