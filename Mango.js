@@ -8,6 +8,7 @@ class Mango {
       this.body = Bodies.circle(x,y,radius,options);
       this.width=20
       this.height=20
+      this.r=radius
       this.image= loadImage("mango.png")
 
       World.add(world, this.body);
@@ -15,9 +16,6 @@ class Mango {
     display(){
 
       var pos =this.body.position;
-      rectMode(CENTER);
-      //fill("brown");
-      rect(pos.x, pos.y, this.width, this.height);
       imageMode(CENTER)
       image(this.image,pos.x+5,pos.y,45,40);
     
