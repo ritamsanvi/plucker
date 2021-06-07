@@ -14,11 +14,13 @@ class Mango {
       World.add(world, this.body);
     }
     display(){
-
       var pos =this.body.position;
-      imageMode(CENTER)
+      push() ;
+      translate(pos.x, pos.y);
+      rotate(this.body.angle);
+      imageMode(CENTER);
       image(this.image,pos.x+5,pos.y,45,40);
-    
+       pop();
       }
     }
   
