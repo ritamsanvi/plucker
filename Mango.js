@@ -6,8 +6,6 @@ class Mango {
           friction:0,
       }
       this.body = Bodies.circle(x,y,radius,options);
-      this.width=20
-      this.height=20
       this.r=radius
       this.image= loadImage("mango.png")
 
@@ -19,7 +17,7 @@ class Mango {
       translate(pos.x, pos.y);
       rotate(this.body.angle);
       imageMode(CENTER);
-      image(this.image,pos.x+5,pos.y,45,40);
+      image(this.image,0,0,45,40);
        pop();
       }
     }
