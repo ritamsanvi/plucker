@@ -8,7 +8,7 @@ class Stone {
         }
     this.body = Bodies.circle(x, y, radius , options);
     this.image = loadImage("stone.png")
-    this.radius= 0.2
+    this.r=radius
     
     World.add(world, this.body);
   }
@@ -19,17 +19,12 @@ class Stone {
   display()
   {
     var pos =this.body.position;
-    //var angle = this.body.angle;
     push();
    translate(pos.x, pos.y);
-    //rotate(angle);
-    ellipseMode(RADIUS);
     strokeWeight(4);
     fill("white");
-    //fill("black");
     imageMode(CENTER)
     image(this.image,0,0,105,105);
-    ellipse(0, 0, this.radius,this.radius);
     pop();
   }
 }
